@@ -23,8 +23,11 @@ public class ArrayList1 {
 				break;
 				
 			case 2:
-				System.out.println("Enter Item: ");
-				l.add(sc.nextInt());
+				System.out.println("Enter Item you want to add?   ----> ");
+				int newList=sc.nextInt();
+					for(int i=0;i<newList;i++){
+						l.add(sc.nextInt());
+					}
 				break;
 				
 			case 3:

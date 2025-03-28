@@ -8,9 +8,9 @@ public class ArrayList1 {
 		Scanner sc=new Scanner (System.in);
 		ArrayList l=new ArrayList();
 		
-		System.out.println("1: Show List \n2: Add itom \n3: Delet itom \n4: Search itom ");
-	
-		do {
+		System.out.println("1: Show List \n2: Add itom \n3: Delet itom \n4: Search itom \n5: Exit ");
+	       boolean k=true;
+		while (k) {
 			System.out.println("Enter your Choice : ");
 			int n=sc.nextInt();
 			switch(n){
@@ -23,7 +23,7 @@ public class ArrayList1 {
 				break;
 				
 			case 2:
-				System.out.println("Enter Item you want to add?   ----> ");
+				System.out.println("Enter how many Item you want to add?   ----> ");
 				int newList=sc.nextInt();
 					for(int i=0;i<newList;i++){
 						l.add(sc.nextInt());
@@ -51,13 +51,14 @@ public class ArrayList1 {
 					System.out.println("Item not Present!!!!!!!!");
 				}
 				break;
-			
-			default:
-				System.out.println("Exit successfully!!!!!!!!!!!");
 				
+			case 5:
+				System.out.println("Exit SuccessFullyyyy!!!!!!!!");
+				   k=false;
+				   break;
 			}
 	       }
-		while(true);
+	
 		
 	}
 
